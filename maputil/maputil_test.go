@@ -7,7 +7,7 @@ import (
 
 func TestTransform(t *testing.T) {
 	list := map[string]string{"test1": "1111", "test2": "2222"}
-	expect := map[string]string{"test1": "11111111", "test2": "22222222"}
+	expect := map[string]string{"test1": "test11111", "test2": "test22222"}
 	result := Transform(list, func(k string, v string) string {
 		return k + v
 	})

@@ -1,7 +1,6 @@
 package sliceutil
 
 import (
-	"fmt"
 	"reflect"
 	"testing"
 )
@@ -21,34 +20,5 @@ func TestTransform(t *testing.T) {
 	result := Transform(list, func(s string) string { return s + s + s })
 	if !reflect.DeepEqual(expect, result) {
 		t.Fatalf("Transform failed: expect %v got %v", expect, result)
-	}
-}
-
-type CompanyCategory struct {
-	Category    string
-	CompanyName string
-}
-
-func TestGroupBy(t *testing.T) {
-	list := []CompanyCategory{
-		{"赛道1", "公司1"},
-		{"赛道1", "公司2"},
-		{"赛道2", "公司3"},
-		{"赛道2", "公司4"},
-		{"赛道2", "公司5"},
-		{"赛道3", "公司6"},
-	}
-	expect := [][]CompanyCategory{
-		{{"赛道1", "公司1"}, {"赛道1", "公司2"}},
-		{{"赛道2", "公司3"}, {"赛道2", "公司4"}, {"赛道2", "公司5"}},
-		{{"赛道3", "公司6"}},
-	}
-
-	result := GroupBy(list, func(elem CompanyCategory) string {
-		return elem.Category
-	})
-
-	if fmt.Sprintf("%v", expect) != fmt.Sprintf("%v", result) {
-		t.Fatalf("GroupBy failed: expect %v got %v", expect, result)
 	}
 }
