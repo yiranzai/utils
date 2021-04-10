@@ -20,7 +20,7 @@
                * [GetQuarterPeriod(v interface{}, format string) (*DateTimePeriod, error) // 获取某个日期所处的 Quarter 范围](./dateutil/README.md#getquarterperiodv-interface-format-string-datetimeperiod-error--获取某个日期所处的-quarter-范围)
                * [GetDayPeriod(v interface{}, format string) (*DateTimePeriod, error) // 获取某个日期所处的 Day 范围](./dateutil/README.md#getdayperiodv-interface-format-string-datetimeperiod-error--获取某个日期所处的-day-范围)
 
-<!-- Added by: runner, at: Sat Apr 10 10:14:56 UTC 2021 -->
+<!-- Added by: runner, at: Sat Apr 10 11:09:59 UTC 2021 -->
 
 <!--te-->
 ### Dateutil
