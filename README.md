@@ -14,6 +14,15 @@ Golang utils
 ---
 
 <!--ts-->
+   * [Golang utils](./README.md#golang-utils)
+      * [TOC](./README.md#toc)
+      * [Install](./README.md#install)
+      * [Features](./README.md#features)
+         * [<a href="./math/README.md">Math</a>](./README.md#math)
+         * [<a href="./dateutil/README.md">Dateutil</a>](./README.md#dateutil)
+      * [License](./README.md#license)
+
+<!-- Added by: runner, at: Sat Apr 10 10:01:01 UTC 2021 -->
 
 <!--te-->
 
